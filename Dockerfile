@@ -10,7 +10,7 @@ RUN apk --no-cache --update add sphinx
 RUN mkdir -pv /opt/sphinx/logs /opt/sphinx/indexes
 VOLUME /opt/sphinx/indexes
 
-RUN indexer -v
+#RUN indexer -v
 
 # redirect logs to stdout
 RUN ln -sv /dev/stdout /opt/sphinx/logs/query.log \
